@@ -1,0 +1,992 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: url('img/bgimg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #e8f5e9; /* fallback mint pastel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+body.index .container {
+    text-align: center;
+    padding: 30px;
+    border: 2px solid #81c784;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.1);
+    width: 350px;
+}
+
+/* Headings */
+body.index h2 {
+    color: #388e3c;
+    margin-bottom: 10px;
+}
+
+body.index h3 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+/* Links */
+body.index a {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    text-decoration: none;
+    color: white;
+    background-color: #66bb6a;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+body.index a:hover {
+    background-color: #43a047;
+}
+
+
+/* === Faculty Login Page === */
+body.faculty {
+    background: linear-gradient(to right, #fff3e0, #ffe0b2);
+}
+
+body.faculty .login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+body.faculty h2 {
+    color: #e65100;
+    margin-bottom: 20px;
+}
+
+body.faculty form input[type="email"],
+body.faculty form input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+body.faculty form input[type="submit"] {
+    background-color: #e65100;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 90%;
+    margin-top: 10px;
+}
+
+body.faculty form input[type="submit"]:hover {
+    background-color: #bf360c;
+}
+
+body.faculty .link {
+    display: block;
+    margin-top: 15px;
+    color: #e65100;
+    text-decoration: none;
+}
+
+body.faculty .link:hover {
+    text-decoration: underline;
+}
+
+
+.faculty-home {
+    background: linear-gradient(to right, #fff3e0, #ffe0b2);
+ /* Light orange background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-box {
+    background-color: white;
+    padding: 30px;
+    margin-top: 100px;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.3); /* orange glow */
+    border-radius: 10px;
+    border: 2px solid #ff9800; /* orange border */
+}
+
+h2 {
+    color: #ff5722; /* Deep orange heading */
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff9800;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+a:hover {
+    background-color: #e65100; /* darker orange on hover */
+}
+
+
+/*//facultyregister*/
+/* === Faculty Registration Page Styles === */
+
+.faculty-body {
+    background: #fff3e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+}
+
+.faculty-register-container {
+    background: #ffffff;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 138, 101, 0.2);
+    padding: 25px 30px;
+}
+
+/* Heading */
+.faculty-heading {
+    text-align: center;
+    color: #ef6c00;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Table Layout */
+.faculty-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.faculty-table td {
+    padding: 10px 0;
+}
+
+/* Inputs & Selects */
+.faculty-input,
+.faculty-select {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ffccbc;
+    border-radius: 5px;
+    background-color: #fff8f2;
+    box-sizing: border-box;
+}
+
+/* Submit Button */
+.faculty-submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ef6c00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faculty-submit-btn:hover {
+    background-color: #e65100;
+}
+
+/* Error Message */
+.faculty-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/*//upload.jsp*/
+.upload-body {
+    background: linear-gradient(to right, #fff3e0, #ffe0b2);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.upload-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #ff9800;
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.3);
+}
+
+.upload-heading {
+    color: #e65100;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.upload-form input[type="text"],
+.upload-form input[type="file"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.upload-form label {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.upload-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.upload-btn:hover {
+    background-color: #e65100;
+}
+
+/*
+uploadpdf*/
+.pdf-upload-body {
+     background: linear-gradient(to right, #fff3e0, #ffe0b2);
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px;
+}
+
+.pdf-upload-heading {
+    text-align: center;
+    color: #ff6600;
+    margin-bottom: 30px;
+}
+
+.pdf-upload-form {
+    width: 400px;
+    margin: auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.pdf-upload-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.pdf-upload-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.pdf-upload-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pdf-upload-button:hover {
+    background-color: #e65c00;
+}
+
+/*studentlogin*/
+/* ==== Student Login Styling (Lavender Theme) ==== */
+.student-login-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f3e5f5, #e1bee7); /* Lavender background */
+}
+
+.student-login-container {
+    width: 350px;
+    margin: 100px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(155, 89, 182, 0.2);
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.student-login-container h2 {
+    color: #6a1b9a;
+    margin-bottom: 25px;
+}
+
+.student-login-container table {
+    width: 100%;
+}
+
+.student-login-container td {
+    padding: 10px;
+    text-align: left;
+    color: #4a148c;
+    font-size: 15px;
+}
+
+.student-login-container input[type="text"],
+.student-login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ce93d8;
+    border-radius: 6px;
+    background-color: #f8f4fc;
+    color: #4a148c;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+/* Unified styling for both the login button and the "not registered" link */
+.student-login-container input[type="submit"],
+.student-login-container a,
+.student-login-container a:visited,
+.student-login-container a:active {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #ab47bc;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: inherit;
+    line-height: normal;
+}
+
+/* Ensure <a> tag matches <input> button behavior */
+.student-login-container a {
+    border: none;
+    outline: none;
+}
+
+/* Hover effect for both */
+.student-login-container input[type="submit"]:hover,
+.student-login-container a:hover {
+    background-color: #8e24aa;
+    text-decoration: none;
+}
+
+
+/*studenthome.jsp*/
+/* Style for home page buttons/links */
+/* Student Home Page Styles */
+#student-home-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ede7f6, #d1c4e9); /* soft purple theme */
+}
+
+.student-home-container {
+    width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(103, 58, 183, 0.3);
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.student-home-container h2 {
+    color: #512da8;
+    margin-bottom: 25px;
+}
+
+.student-home-link {
+    display: inline-block;
+    background-color: #7e57c2;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.student-home-link:hover {
+    background-color: #5e35b1;
+}
+
+
+/*//entersub.jsp*/
+/* Background */
+#view-subject-body {
+    margin: 0;
+    padding: 0;
+     background: linear-gradient(to right, #ede7f6, #d1c4e9); /* soft purple theme */
+
+/*    background: linear-gradient(to right, #ede7f6, #d1c4e9);*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.view-subject-container {
+    max-width: 800px;
+    margin: 60px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(103, 58, 183, 0.2);
+    text-align: center;
+}
+
+.view-subject-container h2 {
+    color: #512da8;
+    margin-bottom: 25px;
+}
+
+.view-subject-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border: 1px solid #b39ddb;
+}
+
+.view-subject-table th,
+.view-subject-table td {
+    border: 1px solid #7e57c2;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.view-subject-table th {
+    background-color: #b39ddb;
+    color: white;
+}
+
+.view-subject-table tr:nth-child(even) {
+    background-color: #f3e5f5;
+}
+
+.view-subject-link {
+    background-color: #7e57c2;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-subject-link:hover {
+    background-color: #5e35b1;
+}
+
+/*enter subject.jsp*/
+.student-access-body {
+  background: linear-gradient(to right, #ede7f6, #d1c4e9); /* soft purple theme */
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px;
+}
+
+.student-access-container {
+    max-width: 400px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(140, 94, 255, 0.15); /* soft lavender shadow */
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.student-access-heading {
+    color: #7e57c2; /* lavender text */
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.student-access-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #e0d7f9; /* soft border */
+    border-radius: 5px;
+    background-color: #f9f7fd; /* very pale purple input bg */
+}
+
+.student-access-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #9575cd; /* button lavender */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.student-access-btn:hover {
+    background-color: #7e57c2; /* darker on hover */
+}
+
+
+/*//detals.jsp*/
+/* Faculty Upload Theme - Purple Pastel */
+.faculty-upload-theme {
+    background: linear-gradient(to right, #f3e8ff, #e1d5f7); /* light purple gradient */
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+.faculty-container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(155, 89, 182, 0.2); /* soft purple shadow */
+    text-align: center;
+}
+
+.faculty-container h2 {
+    color: #6a0dad; /* dark purple heading */
+    margin-bottom: 20px;
+}
+
+.faculty-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border: 1px solid #d1b3f0;
+}
+
+.faculty-table th,
+.faculty-table td {
+    border: 1px solid #b38cd9;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.faculty-table th {
+    background-color: #b38cd9;
+    color: white;
+}
+
+.faculty-table tr:nth-child(even) {
+    background-color: #f3e8ff;
+}
+
+.faculty-link {
+    color: #6a0dad;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.faculty-link:hover {
+    text-decoration: underline;
+}
+
+
+/*//student register.html*/
+/* Student Registration Unique Theme - Purple & Lavender */
+/* Student Register Theme */
+.student-body {
+    background: linear-gradient(to right, #f3e5f5, #ede7f6); /* pastel purple */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+}
+
+.student-register-container {
+    background: #ffffff;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(103, 58, 183, 0.2);
+    padding: 25px 30px;
+}
+
+.student-heading {
+    text-align: center;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.student-table {
+    width: 100%;
+}
+
+.student-table td {
+    padding: 12px 8px;
+    font-size: 16px;
+}
+
+.student-input,
+.student-select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ce93d8;
+    border-radius: 6px;
+    background-color: #f8f0fb;
+    box-sizing: border-box;
+}
+
+.student-submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #8e24aa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.student-submit-btn:hover {
+    background-color: #6a1b9a;
+}
+
+
+/*//admin login*/
+/* Admin login specific styles */
+#admin-login-body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-login-container {
+    max-width: 550px; /* Increased width */
+    margin: 80px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(33, 150, 243, 0.25);
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.admin-heading {
+    color: #1565c0;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.admin-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    background-color: #e3f2fd;
+    box-sizing: border-box;
+}
+
+.admin-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.admin-btn:hover {
+    background-color: #1565c0;
+}
+
+/*//adminhome.jsp*/
+/* Admin Theme Body */
+/* Admin Theme Body */
+#admin-theme-body {
+    margin: 0;
+    padding: 0;
+     background: linear-gradient(to right, #e3f2fd, #90caf9); /* light blue gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative; /* Important for absolute positioning inside */
+    min-height: 100vh;
+}
+
+/* Admin Container */
+.admin-theme-dashboard-container {
+    max-width: 600px;
+    margin: 100px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+     box-shadow: 0 0 20px rgba(33, 150, 243, 0.2); /* light blue shadow */
+    text-align: center;
+}
+
+/* Heading */
+.admin-theme-dashboard-heading {
+       color: #1565c0; /* deep blue */
+
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Email Info */
+.admin-theme-dashboard-email {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Dashboard Button */
+.admin-theme-dashboard-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 25px;
+     background-color: #42a5f5; /* button blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.admin-theme-dashboard-btn:hover {
+       background-color: #1565c0; /* darker blue on hover */
+
+}
+
+/* Logout Button Top-Right */
+.admin-theme-logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #e53935;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+}
+
+.admin-theme-logout-btn:hover {
+    background-color: #b71c1c;
+}
+
+
+/*//approve faculty.jsp admin*/
+/* admin_approve.css */
+
+/* Body Styling */
+#admin-approve-body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e3f2fd, #90caf9);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Container */
+.admin-approve-container {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(33, 150, 243, 0.2);
+    text-align: center;
+}
+
+/* Heading */
+.admin-approve-heading {
+    font-size: 28px;
+    color: #1565c0;
+    margin-bottom: 30px;
+}
+
+/* Table */
+.admin-approve-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-approve-table th,
+.admin-approve-table td {
+    border: 1px solid #90caf9;
+    padding: 12px;
+    text-align: center;
+}
+
+.admin-approve-table th {
+    background-color: #42a5f5;
+    color: white;
+}
+
+.admin-approve-table td {
+    background-color: #e3f2fd;
+    color: #333;
+}
+
+/* Approve / Block Buttons */
+.admin-approve-action a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    color: white;
+}
+
+.admin-approve-action a.approve {
+    background-color: #4caf50;
+}
+
+.admin-approve-action a.approve:hover {
+    background-color: #388e3c;
+}
+
+.admin-approve-action a.block {
+    background-color: #f44336;
+}
+
+.admin-approve-action a.block:hover {
+    background-color: #c62828;
+}
+/* Logout Button */
+/* Logout Button Top-Right (Fixed Position) */
+.logout-container {
+    position: absolute;  /* Change from relative */
+    top: 10px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.logout-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+}
+
+
+
+
+/*//approve.jsp*/
+/* approve_status.css */
+
+/* Center everything on the page */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f4f6f8;
+}
+
+/* Common style for messages */
+.approve-success-msg, .approve-error-msg {
+    padding: 15px 25px;
+    margin: 15px 0;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Success message styles */
+.approve-success-msg {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-color: #81c784;
+}
+
+/* Error message styles */
+.approve-error-msg {
+    background-color: #ffebee;
+    color: #c62828;
+    border-color: #ef9a9a;
+}
+
+
+/*
+//block.jsp*/
+/* block_status.css - For admin message styling */
+
+.block-success-msg {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    padding: 15px 25px;
+    margin: 40px auto;
+    border: 1px solid #90caf9;
+    border-radius: 10px;
+    max-width: 600px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

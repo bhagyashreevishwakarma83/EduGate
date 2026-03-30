@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body class="student-body">
+
+    <div class="student-register-container">
+        <h2 class="student-heading">Student Registration</h2>
+
+        <form action="student_register.jsp" method="post">
+            <table class="student-table">
+                <tr>
+                    <td>Name</td>
+                    <td><input class="student-input" type="text" name="name" placeholder="Enter Name" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input class="student-input" type="text" name="mail" placeholder="Enter Email" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input class="student-input" type="text" name="pwd" placeholder="Enter Password" required></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Gender</td>
+                    <td><input type="radio" name="gender" id="female" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gender" id="male" value="Male">
+                        <label for="male">Male</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gender" id="other" value="Other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td><input class="student-input" type="text" pattern="[6789][0-9]{9}" name="mob" placeholder="Enter Mobile" required></td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td>
+                        <select class="student-select" name="course" required>
+                            <option value="">-- Select Course --</option>
+                            <option value="B.Sc">B.Sc (Bachelor of Science)</option>
+                            <option value="BCA">BCA (Bachelor of Computer Applications)</option>
+                            <option value="B.Tech">B.Tech (Bachelor of Technology)</option>
+                            <option value="B.E">B.E (Bachelor of Engineering)</option>
+                            <option value="B.Com">B.Com (Bachelor of Commerce)</option>
+                            <option value="BBA">BBA (Bachelor of Business Administration)</option>
+                            <option value="BBM">BBM (Bachelor of Business Management)</option>
+                            <option value="BA">BA (Bachelor of Arts)</option>
+                            <option value="BFA">BFA (Bachelor of Fine Arts)</option>
+                            <option value="BMS">BMS (Bachelor of Management Studies)</option>
+                            <option value="LLB">LLB (Bachelor of Law)</option>
+                            <option value="B.Ed">B.Ed (Bachelor of Education)</option>
+                            <option value="B.Des">B.Des (Bachelor of Design)</option>
+                            <option value="BJMC">BJMC (Bachelor of Journalism and Mass Communication)</option>
+                            <option value="MBBS">MBBS (Bachelor of Medicine and Surgery)</option>
+                            <option value="BDS">BDS (Bachelor of Dental Surgery)</option>
+                            <option value="B.Pharm">B.Pharm (Bachelor of Pharmacy)</option>
+                            <option value="BAMS">BAMS (Ayurvedic Medicine)</option>
+                            <option value="BHMS">BHMS (Homeopathic Medicine)</option>
+                            <option value="BPT">BPT (Bachelor of Physiotherapy)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input class="student-submit-btn" type="submit" value="Register"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

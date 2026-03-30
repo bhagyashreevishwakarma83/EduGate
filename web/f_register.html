@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty Registration</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body class="faculty-body">
+    <div class="faculty-register-container">
+        <h2 class="faculty-heading">Register here</h2>
+        <form action="f_register.jsp" method="post" class="faculty-form">
+            <table cellpadding="8" class="faculty-table">
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" placeholder="Enter name" class="faculty-input" required></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="mail" placeholder="Enter Email" class="faculty-input" required></td>
+                </tr>
+                <tr>
+                    <td>Mobile:</td>
+                    <td><input type="text" pattern="[6789][0-9]{9}" name="mob" placeholder="Enter Mobile" class="faculty-input" required></td>
+                </tr>
+                <tr>
+                    <td>Qualification:</td>
+                    <td>
+                        <select name="qualification" class="faculty-select" required>
+                            <option value="">-- Select Qualification --</option>
+                            <option value="M.Sc">M.Sc</option>
+                            <option value="M.A">M.A</option>
+                            <option value="M.Com">M.Com</option>
+                            <option value="M.Tech">M.Tech</option>
+                            <option value="MBA">MBA</option>
+                            <option value="MCA">MCA</option>
+                            <option value="LLM">LLM</option>
+                            <option value="M.Ed">M.Ed</option>
+                            <option value="MFA">MFA</option>
+                            <option value="MPA">MPA</option>
+                            <option value="MSW">MSW</option>
+                            <option value="M.Pharma">M.Pharma</option>
+                            <option value="Master of Architecture">Master of Architecture</option>
+                            <option value="Master of Design">Master of Design</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Subject:</td>
+                    <td>
+                        <select name="subject" class="faculty-select" required>
+                            <option value="">-- Select Subjects --</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Physics">Physics</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="Biology">Biology</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Sanskrit">Sanskrit</option>
+                            <option value="Economics">Economics</option>
+                            <option value="Accountancy">Accountancy</option>
+                            <option value="Business Studies">Business Studies</option>
+                            <option value="Political Science">Political Science</option>
+                            <option value="History">History</option>
+                            <option value="Geography">Geography</option>
+                            <option value="Civics">Civics</option>
+                            <option value="Environmental Science">Environmental Science</option>
+                            <option value="Psychology">Psychology</option>
+                            <option value="Sociology">Sociology</option>
+                            <option value="Philosophy">Philosophy</option>
+                            <option value="Commerce">Commerce</option>
+                            <option value="Statistics">Statistics</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Physical Education">Physical Education</option>
+                            <option value="Fine Arts">Fine Arts</option>
+                            <option value="Home Science">Home Science</option>
+                            <option value="Law">Law</option>
+                            <option value="Engineering Drawing">Engineering Drawing</option>
+                            <option value="Social Science">Social Science</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" id="pwd1" name="pwd" placeholder="Enter Password" class="faculty-input" required></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td>
+                        <input type="password" id="pwd2" placeholder="Confirm Password" class="faculty-input" required>
+                        <span id="one" class="faculty-error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Register" class="faculty-submit-btn" onclick="return valid()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function valid() {
+            let p1 = document.getElementById("pwd1").value;
+            let p2 = document.getElementById("pwd2").value;
+            if (p1 === p2) {
+                return true;
+            } else {
+                document.getElementById("one").innerHTML = "Password and Confirm password Not Match";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

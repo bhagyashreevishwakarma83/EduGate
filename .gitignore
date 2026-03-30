@@ -1,0 +1,7 @@
+# Never upload sensitive config to GitHub
+src/java/config.properties
+
+# NetBeans build files
+build/
+dist/
+nbproject/private/

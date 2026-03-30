@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css.css"> <!-- or student.css -->
+    </head>
+    <body class="student-login-body">
+
+        <div class="student-login-container">
+            <form action="student_check_login" method="post">
+                <h2>Student Login</h2>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" name="mail" placeholder="Enter Email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="pwd" placeholder="Enter Password" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Login"></td>
+                    </tr>
+                </table>
+            </form>
+            <a href="student_register.html">Sign Up</a>
+        </div>
+
+    </body>
+</html>
