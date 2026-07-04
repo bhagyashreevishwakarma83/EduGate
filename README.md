@@ -1,4 +1,4 @@
-\# EduGate 🎓
+# EduGate 🎓
 
 
 
@@ -8,19 +8,19 @@ through a secure, role-based access system for Admins, Faculty, and Students.
 
 
 
-\## 👥 Roles
+## 👥 Roles
 
 
 
-\- \*\*Admin\*\* — Approves or blocks faculty, sends email notifications
+- **Admin** — Approves or blocks faculty, sends email notifications
 
-\- \*\*Faculty\*\* — Uploads videos and PDFs after admin approval
+- **Faculty** — Uploads videos and PDFs after admin approval
 
-\- \*\*Student\*\* — Accesses study materials by subject
+- **Student** — Accesses study materials by subject
 
 
 
-\## ⚙️ Technologies Used
+## ⚙️ Technologies Used
 
 
 
@@ -36,7 +36,7 @@ through a secure, role-based access system for Admins, Faculty, and Students.
 
 
 
-\## ✨ Features
+## ✨ Features
 
 
 
@@ -56,11 +56,11 @@ through a secure, role-based access system for Admins, Faculty, and Students.
 
 
 
-\## 🛠️ How to Run
+## 🛠️ How to Run
 
 
 
-\### 1. Database Setup
+### 1. Database Setup
 
 \- Open MySQL
 
@@ -70,7 +70,7 @@ through a secure, role-based access system for Admins, Faculty, and Students.
 
 
 
-\### 2. Config Setup
+### 2. Config Setup
 
 Create a file `src/java/config.properties` with your credentials:
 
@@ -94,7 +94,7 @@ admin.password=your\_admin\_password
 
 
 
-\### 3. Run
+### 3. Run
 
 \- Open project in NetBeans
 
